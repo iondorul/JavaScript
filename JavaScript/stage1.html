@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        document.write("<br>");
+        document.write("Array demonstration:"+"<br>");
+        var car = new Array();
+        car[0] = "BMW";
+        car[1] = "VOLVO";
+        car[2] = "AUDI";
+        car[3] = "DACIA";
+        for (i = 0; i < car.length; i++) {
+document.writeln(car[i] + "<br>");
+        }
+    </script>
+    <script>
+        document.write("<br>");
+        document.write("Object properties demonstration:"+"<br>");
+           var person={
+               firstname:"John",
+               lastname:"Ion",
+               age : 33,
+               id : 23  /* */
+           }
+        document.write(person.firstname+"<br>");
+        document.write(person.lastname+"<br>");
+        document.write(person.age+"<br>");
+        document.write(person.id+"<br>");
+
+    </script>
+    <script>
+        document.write("<br>");
+        document.write("Object data fields demonstration:"+"<br>");
+        var person=new Object();
+        person.firstname="John";
+        person.lastname="Doe";
+        person.age=50;
+        person.eyecolor="blue";
+        document.write(person.firstname + " is " + person.age + " years old.");
+    </script>
+</head>
+<body>
+<div>
+    <img id="myimage" onclick="changeImage()"
+         src="img/ON_LIGHT.png" width="300" height="250">
+</div>
+<div>
+    <p id="demostyle">Find the element, change the style ! </p>
+    <button onclick="changeTheStyle()">Change the style</button>
+    <button onclick="myFunction()">click !!!</button>
+</div>
+
+<script>
+    Boolean
+    is = false;
+    function changeTheStyle() {
+        if (is == false) {
+            x = document.getElementById("demostyle");
+            x.style.color = "red";
+            x.style.fontSize = "30px";
+            is = true;
+        }
+        else {
+            x = document.getElementById("demostyle");
+            x.style.color = "black";
+            x.style.fontSize = "15px";
+            is = false;
+        }
+    }
+</script>
+<script>
+    function changeImage() {
+        var element = document.getElementById('myimage');
+        if (element.src.match("img/ON_LIGHT.png")) {
+            element.src = "img/OFF_LIGHT.png";
+        }
+        else {
+            element.src = "img/ON_LIGHT.png";
+        }
+    }
+</script>
+<script>
+    function myFunction() {
+        document.write("Oops! The document disappeared! " +
+                "Use document.write() only to write directly " +
+                "into the document output. If you execute document.write" +
+                " after the document has finished loading, the entire HTML" +
+                " page will be overwritten:");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function sendParam(firstname, lastname) {
+            alert("Willcommen" + " " + firstname + " " + lastname + "!");
+        }
+    </script>
+    <script>
+        function compute(a, b) {
+            c = a + b;
+            document.write(a + "+" + b + " " + "it's" + " " + c);
+        }
+
+    </script>
+    <script>
+        function getHiddenField() {
+            var v = document.getElementById("hdnResultValue").value;
+            alert("Hidden value from hidden field: " + " " + v);
+        }
+    </script>
+
+</head>
+<body><br><br><br><br>
+<p>This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    <iframe id="myframe" width="600px" height="400px" src="http://w3Schools.com">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.</p>
+
+<script>
+    document.getElementById("myframe").align="right";
+</script>
+
+<h1 onclick="this.innerHTML='Ooops!'">Click on this text!</h1>
+
+<input type="button" value="alert box" onclick="sendParam('Valentin', 'Ion')">
+
+<p id="demo"> How are you ? Are you happy today ? </p>
+<button onclick="compute(2,4)">compute</button>
+
+<button onclick="getHiddenField()"> Get hidden field</button>
+<input type="hidden" id="hdnResultValue" value="25">
+
+</body>
+</html>
