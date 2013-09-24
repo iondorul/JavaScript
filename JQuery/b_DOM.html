@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #first_div {
+            background-color: aquamarine;
+            width: 300px;
+            height: 100px;
+        }
+
+        #second_div {
+            background-color: bisque;
+            width: 300px;
+            height: 100px;
+        }
+
+        #third_div {
+            background-color: burlywood;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+    <script src="js/JQuery.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert("Text: " + $("#test").text());
+            });
+            $("#btn2").click(function () {
+                alert("HTML: " + $("#test").html());
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn_mik").click(function () {
+                alert("Value: " + $("#miky").val());
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".btn_href").click(function () {
+                alert($("#w3s").attr("href") + " ;" +" "+"the id attribute is:"+ $("#w3s").attr("id"));
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div id="first_div">
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>
+</div>
+
+<div id="second_div">
+    <p>Name: <input type="text" id="miky" value="Mickey Mouse"></p>
+    <button id="btn_mik">Show Value</button>
+</div>
+<div id="third_div">
+    <p><a href="http://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+    <button class="btn_href">Show href Value</button>
+</div>
+</body>
+</html>

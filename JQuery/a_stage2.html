@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/JQuery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dee1").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".deeList").click(function () {
+                $("ul li:first").hide();
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("tr:odd").css("background-color","yellow");
+        });
+    </script>
+</head>
+<body>
+<h1>Welcome to My Web Page</h1>
+
+<table border="1">
+    <tr>
+        <th>Company</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Berglunds snabbkop</td>
+        <td>Sweden</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Mexico</td>
+    </tr>
+    <tr>
+        <td>Ernst Handel</td>
+        <td>Austria</td>
+    </tr>
+    <tr>
+        <td>Island Trading</td>
+        <td>UK</td>
+    </tr>
+</table>
+
+<p>List1:</p>
+<ul>
+    <li>
+        Product1
+    </li>
+    <li>
+        Product2
+    </li>
+    <li>
+        Product3
+    </li>
+</ul>
+
+<p>List2:</p>
+<ul>
+    <li>
+        Product1
+    </li>
+    <li>
+        Product2
+    </li>
+    <li>
+        Product3
+    </li>
+</ul>
+
+<button class="deeList">Click for list , dump shit man !</button>
+<button class="dee1">Click me motherfucker !</button>
+</body>
+</html>
